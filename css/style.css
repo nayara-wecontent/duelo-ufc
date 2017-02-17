@@ -1,0 +1,205 @@
+body{
+
+	font-family: 'Open Sans', sans-serif;
+}
+.background{
+	background-color: #282828;
+	min-height: 800px;
+}
+
+.bg-header{
+	background-color: #dee6ea;
+	padding: 10px;
+    min-width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 99;
+}
+
+.bg-header img{
+	max-width: 100px;
+}
+.concorrentes .img-lutador {
+	min-width: 400px;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ccc;
+
+}
+
+.img-lutador{
+	opacity: 0.5;
+}
+
+.lutador-1:hover{
+	background: url(../img/hover.png);
+	max-width: 400px;
+
+}
+.lutador-1{
+	margin-left: -15px;
+	max-width: 400px;
+}
+.ico-votar{
+	display: none;
+}
+
+.lutador-1:hover .votar .ico-votar {
+    font-size: 26px;
+    color: #FFF;
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    margin: -41px 0 0 -41px;
+    border: 2px solid #FFF;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 7px 40px 7px 40px;
+    cursor: pointer;
+    display: block;
+}
+
+.concorrentes .col-md-6 {
+    padding: 0px !important;
+}
+.espacamento{
+	margin-left: 10px;
+}
+.nome-lutador {
+    color: #fff;
+    padding: 10px;
+    font-size: 22px;
+    margin-top: -49px;
+    position: absolute;
+    background: rgba(14, 14, 14, 0.84);
+    min-width: 400px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.concorrentes .ico-duelo {
+    width: 100px;
+    height: 100px;
+    background: url(../img/vs.png) no-repeat;
+    position: absolute;
+    left: 44%;
+    bottom: 80px;
+}
+
+.resultados {
+    border: 1px solid #fff;
+    max-width: 800px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.lista-resultados h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 22px;
+    font-weight: 400;
+
+}
+
+.lista-resultados img{
+	max-width: 200px;
+}
+.lista-resultados .nome-lutador-resultado{
+	font-size: 22px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.info-resultado{
+	margin-top: 30px;
+}
+
+.info-resultado .contagem{
+	color: #ff0000;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.info-resultado .votos{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.resultado-1{
+	margin-bottom: 20px;
+}
+
+/* Pie Chart */
+.progress-pie-chart {
+width:200px;
+height: 200px;
+border-radius: 50%;
+background-color: #E5E5E5;
+position: relative;
+}
+.progress-pie-chart.gt-50 {
+background-color: #c30000;
+}
+
+.ppc-progress {
+content: "";
+position: absolute;
+border-radius: 50%;
+left: calc(50% - 100px);
+top: calc(50% - 100px);
+width: 200px;
+height: 200px;
+clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+content: "";
+position: absolute;
+border-radius: 50%;
+left: calc(50% - 100px);
+top: calc(50% - 100px);
+width: 200px;
+height: 200px;
+clip: rect(0, 100px, 200px, 0);
+background:  #c30000;
+transform: rotate(60deg);
+}
+.gt-50 .ppc-progress {
+clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+clip: rect(0, 200px, 200px, 100px);
+background: #E5E5E5;
+}
+
+.ppc-percents {
+content: "";
+position: absolute;
+border-radius: 50%;
+left: calc(50% - 173.91304px/2);
+top: calc(50% - 173.91304px/2);
+width: 173.91304px;
+height: 173.91304px;
+background: #282828;
+text-align: center;
+display: table;
+}
+.ppc-percents span {
+display: block;
+font-size: 2.6em;
+font-weight: bold;
+color: #fff;
+}
+
+.pcc-percents-wrapper {
+display: table-cell;
+vertical-align: middle;
+}
+
+.progress-pie-chart {
+margin: 50px auto 0;
+}

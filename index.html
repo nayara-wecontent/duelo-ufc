@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UFC Duelo</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<section class="container-fluid background">
+	<section class="header">	
+			<div class="col-md-12 bg-header">
+				<div class="col-md-3 col-sm-12">
+					<img src="img/ufc_logo.png" alt="">
+				</div>
+
+			</div>
+	</section>
+	<section class="col-md-offset-2 col-md-8 col-sm-12 content">
+		<div class="concorrentes">
+			<div class="col-md-6 col-sm-6 lutador-1 espacamento">
+				<figure class="img-lutador" style="background-image: url(img/gastelum.jpg);"></figure>
+				<div class="votar">
+					<span class="ico-votar">votar</span>
+				</div>
+				<div class="info">
+					<span class="nome-lutador"> Kevin Gastelum</span>
+				</div>
+			</div>
+			<!-- Lutador 2  -->
+			<div class="col-md-6 col-sm-6 lutador-1 espacamento">
+				<figure class="img-lutador" style="background-image: url(img/belfort.jpg);"></figure>
+				<div class="votar">
+					<span class="ico-votar">votar</span>
+				</div>
+				<div class="info">
+					<span class="nome-lutador"> Vitor Belfort</span>
+				</div>
+			</div>
+			<div class="btn-vs col-sm-12 col-md-12">
+				<i class="ico-duelo"></i>
+			</div>
+		</div>
+		<div class="resultados col-md-12 col-sm-12">
+			<div class="lista-resultados">
+				<h2> resultados:</h2>
+				<div class="resultado-1">
+					<div class="col-md-4">
+						<img src="img/gastelum.jpg" alt="">
+					</div>
+					<div class="col-md-4 info-resultado">
+						<span class="nome-lutador-resultado"> Kevin Gastelum</span>
+						<span class="contagem"> 301547</span> <span class="votos">votos</span>
+					</div>
+					<div class="col-md-4">
+					    <div class="bar_container">
+							<div id="main_container">
+								<div id="pbar" class="progress-pie-chart" data-percent="">
+									<div class="ppc-progress">
+									<div class="ppc-progress-fill"></div>
+									</div>
+									<div class="ppc-percents">
+										<div class="pcc-percents-wrapper">
+										<span>%</span>
+										</div>
+									</div>
+								</div>
+
+							<progress style="display: none" id="progress_bar" value="0" max="70"></progress>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+		
+</section>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
